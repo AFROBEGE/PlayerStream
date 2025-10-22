@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tocador YouTube — Músicas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <img src="icone-video-player.png" alt="">
+
+      <div class="txt-area">
+        <h1>Player<br>Stream</h1>
+        <p>Toque suas melhores músicas</p>
+      </div>
+    </div>
+
+    <div class="search-block">
+      <div class="input-area">
+        <input id="search-input" type="search" placeholder="Buscar músicas, artistas..." />
+        <button id="search-btn">Buscar</button>
+      </div>
+
+      <div class="input-area">
+        <input id="manual-url" type="text" placeholder="Colar link do YouTube (opcional)" />
+        <button id="add-url-btn"><span>Adicionar</span> link</button>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="left">
+      <div class="player-card">
+        <div id="player-placeholder">Player carregando...</div>
+        <div class="track-info">
+          <div id="track-title">Nenhuma faixa</div>
+          <div id="track-channel" class="muted">—</div>
+        </div>
+        <div class="volume-row">
+          <input id="volume" type="range" min="0" max="100" step="1" value="80" />
+          <button id="mute-btn">
+            <img src="mute-volume-icone.png" alt="">
+          </button>
+        </div>
+        <hr />
+        <h3>Favoritos</h3>
+        <div id="favorites">Nenhum favorito</div>
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="results">
+        <h2>Resultados</h2>
+        <div id="results-list">Use a busca para procurar músicas</div>
+      </div>
+
+      <div class="playlist">
+        <h2>Playlist</h2>
+        <div id="playlist">Playlist vazia</div>
+        <div class="playlist-controls">
+          <button id="prev-btn">⏮️</button>
+          <button id="play-btn">▶️</button>
+          <button id="pause-btn">⏸️</button>
+          <button id="stop-btn">⏹️</button>
+          <button id="next-btn">⏭️</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <small>Coloque sua API Key no arquivo <code>script.js</code> para ativar a busca (YouTube Data API).</small>
+  </footer>
+
+  <!-- IFrame API (necessária para controlar o player) -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
