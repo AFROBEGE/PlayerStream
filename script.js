@@ -5,7 +5,7 @@
   - O player usa a YouTube IFrame API (já incluída no HTML).
 --------------------------- */
 
-const API_KEY = "AIzaSyDvEV3RkmG0tUC8MSyoVm2TTmsg88xPjjA"; // <- coloque sua API Key aqui
+const API_KEY = "AIzaSyDQyOYcyUY81D0VrpscJi8pH7LqkHdpb0I"; // <- coloque sua API Key aqui
 
 // Elementos
 const searchInput = document.getElementById("search-input");
@@ -216,7 +216,7 @@ function addFavorite(item) {
 
 // ------------------ Search (YouTube Data API) ------------------
 async function searchYouTube(q) {
-  if (!API_KEY || API_KEY === "YOUR_API_KEY_HERE") {
+  if (!API_KEY || API_KEY === "AIzaSyDQyOYcyUY81D0VrpscJi8pH7LqkHdpb0I") {
     resultsList.innerHTML = "<div style='color:#f4b844;padding:10px'>Insira sua API Key no arquivo <code>script.js</code> para usar a busca.</div>";
     return;
   }
