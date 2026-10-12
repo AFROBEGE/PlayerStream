@@ -216,7 +216,7 @@ function addFavorite(item) {
 
 // ------------------ Search (YouTube Data API) ------------------
 async function searchYouTube(q) {
-  if (!API_KEY || API_KEY === "AIzaSyDQyOYcyUY81D0VrpscJi8pH7LqkHdpb0I") {
+  if (!API_KEY || API_KEY !== "AIzaSyDQyOYcyUY81D0VrpscJi8pH7LqkHdpb0I") {
     resultsList.innerHTML = "<div style='color:#f4b844;padding:10px'>Insira sua API Key no arquivo <code>script.js</code> para usar a busca.</div>";
     return;
   }

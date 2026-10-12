@@ -10,7 +10,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  color: var(--text);
+  box-sizing: border-box;
 }
 
 body {
@@ -20,6 +21,11 @@ body {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   color: var(--text);
   background: var(--bg);
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
 }
 
 header {
